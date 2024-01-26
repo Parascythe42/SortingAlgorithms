@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
@@ -15,5 +16,7 @@ public class Main {
         }
 
         sorted = bubbleSort.sort(unsorted);
+
+        System.out.println(Arrays.toString(sorted));
     }
 }
