@@ -112,4 +112,20 @@ public class Sorter {
         return ints;
 
     }
+
+    /**
+     * Sorts an array of integers by checking each item is correctly ordered with respect to the next item.
+     *
+     * @param ints An array to check
+     * @return True if the array is sorted, False otherwise
+     */
+    public boolean sorted(int[] ints) {
+//        Checks if each item is correctly ordered.
+        for (int i = 0; i < ints.length - 2; i++) {
+            if (ints[i] > ints[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
