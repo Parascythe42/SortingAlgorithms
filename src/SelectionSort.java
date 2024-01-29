@@ -1,27 +1,26 @@
 public class SelectionSort {
-    public int[] sort(int[] unsorted) {
+    public int[] sort(int[] ints) {
 
         int min;
         int minIndex = 0;
-//        int max = Integer.MIN_VALUE;
 
         int j;
 
-        for (int i = 0; i < unsorted.length; i++) {
+        for (int i = 0; i < ints.length; i++) {
             j = i;
             min = Integer.MAX_VALUE;
-            while (j < unsorted.length) {
-                if (unsorted[j] < min) {
-                    min = unsorted[j];
+            while (j < ints.length) {
+                if (ints[j] < min) {
+                    min = ints[j];
                     minIndex = j;
                 }
 
                 j++;
             }
-            unsorted[minIndex] = unsorted[i];
-            unsorted[i] = min;
+            ints[minIndex] = ints[i];
+            ints[i] = min;
         }
 
-        return unsorted;
+        return ints;
     }
 }
