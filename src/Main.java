@@ -9,7 +9,7 @@ public class Main {
         int[] sorted;
         Random random = new Random();
 
-        Sorter sort = new Sorter();
+        Sorter sorter = new Sorter();
 
         for (int i = 0; i < unsorted.length; i++) {
             unsorted[i] = random.nextInt(range);
@@ -17,8 +17,9 @@ public class Main {
 
 //        sorted = sort.bubble(unsorted);
 //        sorted = sort.insertion(unsorted);
-        sorted = sort.selection(unsorted);
+        sorted = sorter.selection(unsorted);
 
         System.out.println(Arrays.toString(sorted));
+        System.out.println(sorter.verify(sorted));
     }
 }

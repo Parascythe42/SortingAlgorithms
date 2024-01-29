@@ -119,7 +119,7 @@ public class Sorter {
      * @param ints An array to check
      * @return True if the array is sorted, False otherwise
      */
-    public boolean sorted(int[] ints) {
+    public boolean verify(int[] ints) {
 //        Checks if each item is correctly ordered.
         for (int i = 0; i < ints.length - 2; i++) {
             if (ints[i] > ints[i + 1]) {
