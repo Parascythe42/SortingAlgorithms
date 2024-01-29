@@ -9,15 +9,15 @@ public class Main {
         int[] sorted;
         Random random = new Random();
 
-//        BubbleSort sort = new BubbleSort();
-//        InsertionSort sort = new InsertionSort();
-        SelectionSort sort = new SelectionSort();
+        Sorter sort = new Sorter();
 
         for (int i = 0; i < unsorted.length; i++) {
             unsorted[i] = random.nextInt(range);
         }
 
-        sorted = sort.sort(unsorted);
+//        sorted = sort.bubble(unsorted);
+//        sorted = sort.insertion(unsorted);
+        sorted = sort.selection(unsorted);
 
         System.out.println(Arrays.toString(sorted));
     }
