@@ -10,7 +10,8 @@ public class Main {
         Random random = new Random();
 
 //        BubbleSort sort = new BubbleSort();
-        InsertionSort sort = new InsertionSort();
+//        InsertionSort sort = new InsertionSort();
+        SelectionSort sort = new SelectionSort();
 
         for (int i = 0; i < unsorted.length; i++) {
             unsorted[i] = random.nextInt(range);
