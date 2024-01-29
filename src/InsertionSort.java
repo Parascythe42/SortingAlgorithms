@@ -6,8 +6,9 @@ public class InsertionSort {
      * @return A sorted version of the input array
      */
     public int[] sort(int[] ints) {
-//        Defining variables.
+//        To store the current value to check.
         int key;
+//        The iterator to go backwards through the array and check against the key.
         int j;
 
 //        Iterates over the entire array from the second item.
