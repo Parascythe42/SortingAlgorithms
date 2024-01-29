@@ -6,16 +6,17 @@ public class Main {
         int range = 10000;
         int length = 100;
         int[] unsorted = new int[length];
-        int[] sorted = new int[length];
+        int[] sorted;
         Random random = new Random();
 
-        BubbleSort bubbleSort = new BubbleSort();
+//        BubbleSort sort = new BubbleSort();
+        InsertionSort sort = new InsertionSort();
 
         for (int i = 0; i < unsorted.length; i++) {
             unsorted[i] = random.nextInt(range);
         }
 
-        sorted = bubbleSort.sort(unsorted);
+        sorted = sort.sort(unsorted);
 
         System.out.println(Arrays.toString(sorted));
     }
